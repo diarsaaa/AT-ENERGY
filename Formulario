@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="../CSS/Formulario.css" rel="stylesheet" type="text/css"/>
+	<title>FormularioRegistro</title>
+</head>
+<body>
+	<div id="content">
+            <section> 
+		<h1>Solicitud de consulta</h1>
+		<form action="registro.php" method="POST">
+	        <table cellpadding="5" cellspacing="5">
+		        <tr>
+		            <td><label>Nombres</label></td>
+		            <td><input type="text" name="nombre" placeholder="Nombres" required/></td>
+		        </tr>
+		        <tr>
+		            <td><label>Apellidos</label></td>
+		            <td><input type="text" name="apellido" placeholder="Apellidos" required/></td>
+		        </tr>
+		        <tr>
+		            <td><label>Correo electronico</label></td>
+		            <td><input type="text" name="email" placeholder="example@mail.com" required/></td>
+		        </tr>		        
+		        <tr>
+		            <td colspan="2"><label>Ingrese descripcion de su consulta</label></td>		            
+		        </tr>
+                        <tr>
+                            <td><input  type="text" name="consulta" required/></td>
+                        </tr>
+		        <tr>
+                            <td><center><label><input type="reset" value="Reestablecer"></input></label></center></td>
+		            <td><center><label><input type="submit" value="Registrarme"></input></label></center></td>	
+                            </center>
+		        </tr>
+                 </table>                      
+		</form>
+            </section>     
+	</div>    
+</body>
+</html>
