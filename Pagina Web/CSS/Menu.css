@@ -1,0 +1,121 @@
+
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+a#pull {
+    display: none;
+    text-decoration:none;
+    font-family:sans-serif;
+    font-size: 150%;
+    font-style: italic;  
+    color: #FFFEFE;
+}
+
+navegador {
+    display: inline-block;
+    height: 35%;
+    width: 100%;
+    position: relative;
+    background-color: #F77205;
+    margin: 10px 0px 10px 0px;
+}
+
+navegador a {
+    color: #FFFEFE;
+    display: inline-block;
+    width: auto;   
+    line-height: 40px;
+}
+
+navegador ul{
+   list-style-type: none;
+   text-align: center;
+   margin: 0px 0px 0px 0px;
+   width:auto;
+   width:auto;   
+}
+navegador li{
+   display: inline-block;
+   text-align: center;
+   margin: 0 20px 0 0;   /* Espacio entre recuadros */
+   /* Estilo de Letras */
+   font-family: sans-serif;
+   font-size: 150%;
+   font-style: italic;
+   width: 20%;
+   height: 35px;
+}
+navegador li a {
+   padding: 0px 30px 0px 30px;
+   color: #FFFEFE;   
+   text-decoration: none; 
+   text-align: left;
+}
+
+navegador li a:hover{   
+   color: #045FB4;
+   font-weight: bold;
+}
+
+navegador a:hover, navegador a:active, a#pull:hover{
+    color: #F77205;
+    font-weight: bold;
+}
+
+@media only screen and (max-width :1100px) {
+    navegador {
+        border-bottom: 0;
+        height: auto;
+    }
+
+    navegador ul {
+        margin: 0;
+        padding: 0;
+        display: none;
+        height: auto;
+        width: 100%;
+    }
+
+    navegador li {
+        width: 50%;
+        float: left;
+        color: #FFFEFE;
+        position: relative;
+        border: 1px solid;
+        margin: 0px 0;
+    }
+
+    navegador a {            
+        width: 100%;
+        text-indent: 25px;
+    }
+
+    navegador a#pull {
+        display: block;
+        background-color: #045FB4;
+        width: 100%;
+        position: relative;
+    }
+
+    navegador a#pull:after {
+        content:"";
+        background: url('../IMAGENES/nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;        
+    }
+}
+
