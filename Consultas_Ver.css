@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-nov-2017, 10:22:31
+    Author     : Admin
+*/
+
+.caja_consultas{
+    background: white;
+    float: left;
+    width: 450px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid #DF7401;
+    border-radius: 10px;
+    margin:3px 5px 3px 5px;
+}
+
+.contenedor_consultas{
+    background: white;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 100px    
+}
+
+.Caja_Nombre {
+    width: auto;
+    height: 50px;
+    position: relative;
+}
+
+.Caja_Peticion {
+    width: auto;
+    height: auto;
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width :900px) {   
+    .Caja_Nombre {
+    width: auto;
+    height: 55px;
+    position: relative;
+    }
+        
+    .contenedor_consultas{
+    background: white;
+    width: 360px;
+    height: auto;
+    margin:auto;
+    margin-top: 20px;    
+    }
+        
+    .caja_consultas{
+    background: white;
+    float: left;
+    width: 240px;
+    height: auto;
+    text-align: center;
+    border: 1px solid #DF7401;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: block;
+    }   
+   
+}
+
